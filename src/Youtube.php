@@ -5,7 +5,7 @@ namespace Youtube;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @method static YoutubeSearch search()
+ * @method static YoutubeSearch search(string $q = null)
  */
 class Youtube extends Facade
 {
