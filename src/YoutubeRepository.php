@@ -4,8 +4,10 @@ namespace Youtube;
 
 class YoutubeRepository
 {
-    public function search(): YoutubeSearch
+    public function search(string $q = null): YoutubeSearch
     {
-        return resolve(YoutubeSearch::class);
+        $youtube = resolve(YoutubeSearch::class);
+
+        return $q ? $youtube->search($q) : $youtube;
     }
 }
