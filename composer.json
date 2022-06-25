@@ -1,5 +1,5 @@
 {
-  "name": "wthreex/youtube",
+  "name": "foremtehan/youtube",
   "require": {
     "php": "^8.1",
     "illuminate/support": "^9.0",
